@@ -7,7 +7,7 @@ Pokiaľ nie je uvedené inak sú všetky dáta povinné. Pre jednotlivé dátov�
 
 ## Osoba
 O každej osobe systém eviduje nasledovné dáta: 
- - unikátny číselný identifikátor (ID), 
+ - unikátny identifikátor (ID), 
  - meno, 
  - priezvisko, 
  - rodné číslo, 
@@ -68,13 +68,13 @@ Systém poskytuje nasledovnú funkcionalitu (API):
  - Pridanie novej osoby
  - Aktualizácia existujúcej osoby
  - Vylistovanie všetkých osôb v systéme
- - Nájdenie konkrétnej osoby (podla unikátneho číselného identifikátora)
+ - Nájdenie konkrétnej osoby (podla unikátneho identifikátora)
 
 ### Správa poistných zmlúv
  - Založenie poistnej zmluvy osobe
  - Aktualizácia existujúcej zmluvy
  - Vylistovanie všetkých poistných zmlúv
- - Vylistovanie poistných zmlúv pre daného poisťovateľa (podľa unikátneho číselného identifikátora osoby) - vylistuje len zmluvy, kde je daná osoba poisťovateľom!
+ - Vylistovanie poistných zmlúv pre daného poisťovateľa (podľa unikátneho identifikátora osoby) - vylistuje len zmluvy, kde je daná osoba poisťovateľom!
 
 API implementujte všeobecne ako rozhranie a následne vytvorte konkrétnu implementáciu (tj. interface + classa ktorá ho implementuje). 
 
