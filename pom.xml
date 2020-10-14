@@ -7,6 +7,12 @@
     <version>1.0.0</version>
     <name>Assignment1</name>
     <description>Assignment 1 for course ASOS FEI STU, school year 2020/2021</description>
+    <developers>
+        <developer>
+            <id>000000</id>
+            <name>Milan Mladoniczky</name>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

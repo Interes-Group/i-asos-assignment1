@@ -21,6 +21,8 @@ Pokiaľ korešpondenčná adresa osoby nie je definovaná, použije sa jeho adre
  - názvu obce, 
  - názvu ulice, 
  - orientačného čísla domu
+ 
+Trieda osoby musí dediť od AbstractUser.
 
 ## Typy zmlúv
 Systém eviduje dva typy zmlúv: životné poistenie a neživotné poistenie. Každá zmluva má priradené: 
@@ -60,6 +62,8 @@ Medzi zmluvy neživotného poistenia patria:
  - adresa nehnuteľnosti
  - hodnota nehnuteľnosti v eurách 
  - pripoistenie garáže (áno / nie)
+ 
+Trieda zmluvy musí dediť od AbstractInsuranceContract.
 
 ## Funkcionalita API
 Systém poskytuje nasledovnú funkcionalitu (API):
@@ -76,12 +80,14 @@ Systém poskytuje nasledovnú funkcionalitu (API):
  - Vylistovanie všetkých poistných zmlúv
  - Vylistovanie poistných zmlúv pre daného poisťovateľa (podľa unikátneho identifikátora osoby) - vylistuje len zmluvy, kde je daná osoba poisťovateľom!
 
-API implementujte všeobecne ako rozhranie a následne vytvorte konkrétnu implementáciu (tj. interface + classa ktorá ho implementuje). 
+Nech API implementuje rozhranie (IUserService / IInsuranceContractService). Vytvorte konkrétnu implementáciu pre dané rozhrania. 
 
 Pre demonštráciu funkcionality vytvorte v main metóde aspoň jedného používateľa a založte mu aspoň jednu ľubovoľnú zmluvu.
 
 ## Hodnotenie
 Zadanie si naklonujte z repozitára zadania. Svoje vypracovanie nahrajte do vášho repozitára pre toto zadanie pomocou programu Git (git commit + git push). Vypracovanie môžete “pusho-vať” priebežne. 
+
+Ešte pred programovaním napíšte svoje AIS ID, meno a priezvisko do pom.xml ako developer, aby sme vám vedeli zapísať body.
 
 Hodnotiť sa bude iba master branch, na ktorej budú spustené aj hodnotiace testy pri každej aktualizácii kódu. Za každý úspešný test je udelené 0,5 bodu. Testy je prísne zakázané upravovať! Iba body získané z poslednej verzie vypracovania (t.j. z posledného commitu) sa berú do úvahy. 
 
