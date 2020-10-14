@@ -8,9 +8,9 @@ import java.util.List;
  * Interface pre Spring service pre správu poistných zmlúv.
  *
  * @param <T> Trieda poistnej zmluvy
- * @param <U> Trieda identifikátora používateľa
+ * @param <I> Trieda identifikátora používateľa
  */
-public interface IInsuranceContractService<T extends AbstractInsuranceContract, U> {
+public interface IInsuranceContractService<T extends AbstractInsuranceContract, I> {
 
     T create(T contract);
 
@@ -18,6 +18,6 @@ public interface IInsuranceContractService<T extends AbstractInsuranceContract, 
 
     List<T> getAll();
 
-    List<T> getByUserId(U userId);
+    List<T> getByUserId(I userId);
 
 }

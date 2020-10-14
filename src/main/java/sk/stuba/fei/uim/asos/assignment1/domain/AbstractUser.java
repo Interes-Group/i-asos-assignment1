@@ -23,4 +23,6 @@ public abstract class AbstractUser<T> {
     public void setId(T id) {
         this.id = id;
     }
+
+    public abstract String toString();
 }
